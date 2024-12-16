@@ -1,4 +1,14 @@
-/******     BASELINE.CSS was inspired by normalize.css v8.0.1     ******/
+/******       BASELINE.CSS was inspired by normalize.css v8.0.1       ******/
+
+/* Document
+========================================================================== */
+
+/* Apply box-sizing globally for consistent layout behavior */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* Document
    ========================================================================== */
