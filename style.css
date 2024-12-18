@@ -78,6 +78,29 @@ a:hover {
   text-decoration: underline;  /* Add underline on hover for better accessibility */
 }
 
+/* Interactive Section of Display Buttons */
+
+.interactive-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    max-width: 60%;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
 button {
   background-color: #FF0000;  /* Red background for the button */
   color: #000000;
@@ -93,6 +116,23 @@ button {
 button:hover {
   background-color: #45A049;  /* Slightly darker green on hover */
 }
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer Copyright & Social Media Links */
 
 footer {
   text-align: center;
