@@ -1,4 +1,4 @@
-/*******  Cache Busting >> styles.css v1.5  *******/
+/*******  Cache Busting >> styles.css v1.6  *******/
 
 /*  Additional styles to enhance the demo webpage */
 
@@ -125,7 +125,7 @@ a:hover {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
-    color: #FF00FF;
+    color: #FF3131; /* Neon Red */
     background-color: #28A745;
     text-decoration: none;
     border-radius: 5px;
