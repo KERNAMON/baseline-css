@@ -1,4 +1,4 @@
-/*******  Cache Busting >> styles.css v1.1  *******/
+/*******  Cache Busting >> styles.css v1.4  *******/
 
 /*  Additional styles to enhance the demo webpage */
 
@@ -105,7 +105,7 @@ a:hover {
     max-width: 600px;  /* Optional to limit button container width */
 }
 
-hello-btn {
+.hello-btn {
   background-color: #FF0000;  /* Red background for the button */
   color: #000000;
   font-weight: bold;
@@ -117,7 +117,7 @@ hello-btn {
   transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
 }
 
-hello-btn:hover {
+.hello-btn:hover {
   background-color: #45A049;  /* Slightly darker green on hover */
 }
 
