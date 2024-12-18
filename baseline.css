@@ -24,7 +24,7 @@ SOFTWARE.
 
 /******       BASELINE.CSS was inspired by normalize.css v8.0.1       ******/
 
-/* Document v1.1 for Cache Busting
+/* Document v1.9 for Cache Busting
 ========================================================================== */
 
 /* Apply box-sizing globally for consistent layout behavior */
@@ -107,8 +107,8 @@ main {
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 2rem;
+  margin: 0.67rem 0;
 }
 
 /* Footer Section Styling */
@@ -126,7 +126,7 @@ footer {
 footer p, 
 footer a {
   margin: 0.5rem;
-  font-size: 0.9em; /* Slightly smaller font for footer */
+  font-size: 0.9rem; /* Slightly smaller font for footer */
   text-align: center;
   color: #555; /* Muted text color */
 }
@@ -161,7 +161,7 @@ footer .social-icons {
 
 footer .social-icons a {
   color: #FF00FF;   /* Magenta */
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 footer .social-icons a:hover {
@@ -198,7 +198,7 @@ hr {
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /* Text-level semantics
@@ -223,7 +223,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 small {
@@ -239,11 +239,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 
 /* Embedded content
@@ -312,7 +312,7 @@ button:focus {
 }
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0.35rem 0.75rem 0.625rem;
 }
 
 legend {
