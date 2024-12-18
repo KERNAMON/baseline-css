@@ -92,6 +92,10 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.interactive-section .content {
+    margin-bottom: 10px;  /* Space between text and buttons, styling for Header and Paragraph text */
+}
+
 .left-side {
     max-width: 60%;
 }
