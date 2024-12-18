@@ -1,0 +1,144 @@
+/*******  Cache Busting >> styles.css v1.0  *******/
+
+/*  Additional styles to enhance the demo webpage */
+
+body {
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+header {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Center the content horizontally */
+  padding: 10px 20px;
+  background-color: #0000FF;     /* #2E6F40; Forest Green vs #0000FF; Lovely Blue */
+  text-align: center;
+}
+
+header .container {
+  background-color: #000000;
+  display: flex;      /* Nested flexbox for layout within the header */
+  align-items: center;
+  justify-content: space-between; /* Space between logo and header content */
+  max-width: 800px; /* Match the central column width */
+  width: 100%;      /* Ensure it spans the full width */
+}
+
+header .logo {
+  flex: 0 0 auto; /* Fixed size for the logo container */
+  margin-right: 20px; /* Space between logo and header content */
+}
+
+header .logo-img {
+  max-width: 100%; /* Prevents the image from overflowing and ensures better scalability across different screen sizes */
+  height: auto; 
+}
+
+header .header-content {
+  flex: 1; /* Take the remaining space */
+}
+
+header h1 {
+  color: #00FF00;
+}
+
+header p {
+  color: #FFFF00;  /* Yellow for better contrast */
+  font-size: 1.2em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;  /* Dark gray for headings */
+}
+
+p {
+  color: #000000;  /* Black for body text */
+}
+
+a {
+  color: #0000FF;          /* Lovely blue for links */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;  /* Add underline on hover for better accessibility */
+}
+
+button {
+  background-color: #FF0000;  /* Red background for the button */
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #45A049;  /* Slightly darker green on hover */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #2E6F40;  /* Forest Green */
+  color: white;
+  margin-top: 20px;
+}
+
+footer p {
+  color: #FFFF00;  
+  font-size: 1em;  /* Slightly larger text for footer */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  /* Stack the header items vertically */
+  header .container {
+    flex-direction: column;
+    align-items: center; /* Center items vertically */
+  }
+
+  /* Adjust logo image size between 300, 600, 1100px wide */
+  header .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust header text size and spacing */
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  /* Ensure container within header has full width and adjusts margins */
+  header {
+    padding: 15px;
+  }
+
+  /* Adjust container layout on smaller screens */
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+}
+/*EOF*/
