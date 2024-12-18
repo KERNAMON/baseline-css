@@ -1,4 +1,4 @@
-/*******  Cache Busting >> styles.css v1.0  *******/
+/*******  Cache Busting >> styles.css v1.1  *******/
 
 /*  Additional styles to enhance the demo webpage */
 
@@ -47,8 +47,8 @@ header h1 {
 }
 
 header p {
-  color: #FFFF00;  /* Yellow for better contrast */
-  font-size: 1.2em;
+  color: #FFFF00;     /* Yellow for better contrast */
+  font-size: 1.2rem;  /* rem font sizes ensures a predictable scaling behavior across different devices */
 }
 
 .container {
@@ -144,7 +144,7 @@ footer {
 
 footer p {
   color: #FFFF00;  
-  font-size: 1em;  /* Slightly larger text for footer */
+  font-size: 1rem;  /* Slightly larger text for footer */
 }
 
 /* Media Query for Smaller Screens */
@@ -156,29 +156,31 @@ footer p {
   }
 
   /* Adjust logo image size between 300, 600, 1100px wide */
-  header .logo img {
+  header .logo-img {
     width: 100%;
     height: auto;
   }
 
   /* Adjust header text size and spacing */
   header h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   header p {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   /* Ensure container within header has full width and adjusts margins */
   header {
     padding: 15px;
+    margin: 0 auto;  /* fallback margin to ensure spacing remains consistent */
   }
 
   /* Adjust container layout on smaller screens */
   .container {
     max-width: 100%;
     padding: 15px;
+    box-sizing: border-box;  /* Prevents padding from expanding the container beyond its intended width */
   }
 }
 /*EOF*/
