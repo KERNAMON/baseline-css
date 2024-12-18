@@ -96,16 +96,14 @@ a:hover {
     margin-bottom: 10px;  /* Space between text and buttons, styling for Header and Paragraph text */
 }
 
-.left-side {
-    max-width: 60%;
-}
-
-.right-side {
+.interactive-section .buttons {
     display: flex;
-    align-items: center;
+    justify-content: space-between;  /* Align buttons to left and right */
+    width: 100%;
+    max-width: 600px;  /* Optional to limit button container width */
 }
 
-button {
+hello-btn {
   background-color: #FF0000;  /* Red background for the button */
   color: #000000;
   font-weight: bold;
@@ -117,7 +115,7 @@ button {
   transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
 }
 
-button:hover {
+hello-btn:hover {
   background-color: #45A049;  /* Slightly darker green on hover */
 }
 
