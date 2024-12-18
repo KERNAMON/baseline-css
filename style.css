@@ -82,10 +82,12 @@ a:hover {
 
 .interactive-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack content vertically */
     align-items: center;
     padding: 20px;
-    margin: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Optional: Limit the width */
+    text-align: center;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
