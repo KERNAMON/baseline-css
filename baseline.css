@@ -1,6 +1,30 @@
+/*
+MIT License
+
+Copyright (c) 2024 Saskia Ostermann Toutatis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
 /******       BASELINE.CSS was inspired by normalize.css v8.0.1       ******/
 
-/* Document
+/* Document v1.1 for Cache Busting
 ========================================================================== */
 
 /* Apply box-sizing globally for consistent layout behavior */
@@ -8,6 +32,20 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%; /* Ensures scrolling when content overflows */
+  overflow-y: auto; /* Ensures vertical scrolling when needed */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh; /* Ensures the body stretches to the full viewport height */
 }
 
 /* Document
@@ -22,11 +60,48 @@ html {
 
 /* Sections
    ========================================================================== */
-
-body {
-  margin: 0;
+/* Header Section Styling */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+header h1,h2,h3,h4,h5,h6, 
+header p {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  header h1,h2,h3,h4,h5,h6, 
+  header p {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Main Section Styling */
 main {
   display: block;
 }
@@ -34,6 +109,82 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+/* Footer Section Styling */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* Align content to the center horizontally */
+  padding: 1rem;
+  background-color: #f8f9fa; /* Neutral background color */
+  box-sizing: border-box;
+  border-top: 1px solid #ddd; /* Subtle border for separation */
+}
+
+footer p, 
+footer a {
+  margin: 0.5rem;
+  font-size: 0.9em; /* Slightly smaller font for footer */
+  text-align: center;
+  color: #555; /* Muted text color */
+}
+
+footer a {
+  text-decoration: none;
+  color: #005fcc; /* Highlight links with primary color */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add emphasis on hover */
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    text-align: center;
+  }
+
+  footer p, 
+  footer a {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Footer Social Icons */
+footer .social-icons {
+  display: flex;
+  gap: 1rem; /* Spacing between icons */
+  justify-content: center;
+}
+
+footer .social-icons a {
+  color: #FF00FF;   /* Magenta */
+  font-size: 1.2em;
+}
+
+footer .social-icons a:hover {
+  color: #DC143C;   /* Crimson RedPink */
+}
+
+/* Back To Top Button on Footer */
+footer .back-to-top {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+footer .back-to-top a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #005fcc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+footer .back-to-top a:hover {
+  background-color: #0047b3;
 }
 
 /* Grouping content
