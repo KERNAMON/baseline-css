@@ -24,64 +24,51 @@ SOFTWARE.
 
 /******       BASELINE.CSS was inspired by normalize.css v8.0.1       ******/
 
-/* Document v1.9 for Cache Busting
+/* Document v2.0 for Cache Busting
 ========================================================================== */
 
 /* Apply box-sizing globally for consistent layout behavior */
-*,
-*::before,
-*::after {
+html, body, header, footer, main, section, article, aside, nav {
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  min-height: 100%; /* Ensures scrolling when content overflows */
-  overflow-y: auto; /* Ensures vertical scrolling when needed */
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  min-height: 100vh; /* Ensures the body stretches to the full viewport height */
-}
-
-/* Document
-   ========================================================================== */
-
 html {
+  height: 100%;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* Added for compatibility */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Sections
-   ========================================================================== */
-/* Header Section Styling */
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body stretches to the full viewport height */
+}
+
+/* Consolidated heading styles */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.67rem 0;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* Sections */
 header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 header img {
   max-width: 100%;
   height: auto;
-}
-
-header h1,h2,h3,h4,h5,h6, 
-header p {
-  margin: 0;
-  flex: 1;
-  text-align: center;
-  word-wrap: break-word;
 }
 
 @media (max-width: 768px) {
@@ -94,84 +81,48 @@ header p {
     max-width: 50%;
     margin: 0 auto;
   }
-
-  header h1,h2,h3,h4,h5,h6, 
-  header p {
-    margin: 0.5rem 0;
-  }
 }
 
-/* Main Section Styling */
-main {
-  display: block;
-}
-
-h1 {
-  font-size: 2rem;
-  margin: 0.67rem 0;
-}
-
-/* Footer Section Styling */
+/* Footer */
 footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* Align content to the center horizontally */
+  justify-content: center;
   padding: 1rem;
-  background-color: #f8f9fa; /* Neutral background color */
-  box-sizing: border-box;
-  border-top: 1px solid #ddd; /* Subtle border for separation */
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
 }
 
-footer p, 
-footer a {
+footer p, footer a {
   margin: 0.5rem;
-  font-size: 0.9rem; /* Slightly smaller font for footer */
+  font-size: 0.9rem;
   text-align: center;
-  color: #555; /* Muted text color */
+  color: #555;
 }
 
 footer a {
   text-decoration: none;
-  color: #005fcc; /* Highlight links with primary color */
+  color: #005fcc;
 }
 
 footer a:hover {
-  text-decoration: underline; /* Add emphasis on hover */
+  text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  footer {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    text-align: center;
-  }
-
-  footer p, 
-  footer a {
-    margin: 0.5rem 0;
-  }
-}
-
-/* Footer Social Icons */
 footer .social-icons {
   display: flex;
-  gap: 1rem; /* Spacing between icons */
+  gap: 1rem;
   justify-content: center;
 }
 
 footer .social-icons a {
-  color: #FF00FF;   /* Magenta */
+  color: #FF00FF;
   font-size: 1.2rem;
 }
 
 footer .social-icons a:hover {
-  color: #DC143C;   /* Crimson RedPink */
-}
-
-/* Back To Top Button on Footer */
-footer .back-to-top {
-  text-align: center;
-  margin-top: 1rem;
+  color: #DC143C;
 }
 
 footer .back-to-top a {
@@ -187,222 +138,69 @@ footer .back-to-top a:hover {
   background-color: #0047b3;
 }
 
-/* Grouping content
-   ========================================================================== */
-
+/* Grouping content */
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1rem; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-a {
-  background-color: transparent;
-}
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1rem; /* 2 */
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25rem;
-}
-
-sup {
-  top: -0.5rem;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-img {
-  border-style: none;
-  display: block; /* Ensure consistent image layout */
-  max-width: 100%; /* Responsive images */
-  height: auto;
-}
-
-svg, video, canvas {
-  display: block;
-}
-
-/* Forms
-   ========================================================================== */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-  caret-color: auto;
-}
-
-button,
-input {
+  height: 0;
   overflow: visible;
 }
 
-button,
-select {
+/* Forms */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
   text-transform: none;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
   -webkit-appearance: button;
+  -moz-appearance: button; /* Added for compatibility */
 }
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+::placeholder {
+  color: #757575;
+  opacity: 1;
 }
 
-button:focus {
-  outline: 2px solid #005fcc;
-}
-
-fieldset {
-  padding: 0.35rem 0.75rem 0.625rem;
-}
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+/* Miscellaneous */
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+/* WebKit-based browsers on iOS and iPadOS and Apple/Safari */
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
 
-::placeholder {
-  color: #757575;
-  opacity: 1; /* Ensure visibility */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-/* Interactive
-   ========================================================================== */
-
-details {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-/* Miscellaneous
-   ========================================================================== */
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-/* Custom Additions for KERNAMON CMS & WorkStation */
-
-/* Focus Outline for Accessibility */
 :focus {
   outline: 2px dashed #005fcc;
   outline-offset: 4px;
 }
 
-/* Scrollbar Customization */
-::-webkit-scrollbar {
-  width: 12px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+/* Browsers like Firefox */
+* {
+  scrollbar-width: thin; /* Options: auto | thin | none */
+  scrollbar-color: #888 #f1f1f1; /* thumb color | track color */
 }
 /*EOF*/
