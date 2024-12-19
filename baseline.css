@@ -43,16 +43,53 @@ html {
 }
 
 body {
-  height: 100%;
   margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, Verdana, Helvetica, Arial, sans-serif;  /* Verdana has a limited font family of weights or styles compared to other system fonts like Segoe UI or Roboto */
+  line-height: 1.15;
   display: block;
-  min-height: 100vh; /* Ensures the body stretches to the full viewport height */
+  min-height: 100vh; /* Ensures the body stretches to the full viewport height, which makes "height: 100%;" redundant */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Chrome and Safari sometimes have issues with table borders, where the border-color property doesn't inherit properly from the parent element.
+   This rule ensures that the border color of the table will inherit from the color property (text color) of the parent element. */
+table {
+  border-color: currentcolor;
+}
+
+/* Remove the default disclosure triangle of <summary> in WebKit browsers like Apple/Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Remove the list-style in all browsers, default marker for <summary> */
+summary {
+  list-style: none; /* Remove default list item marker */
+  display: block; /* Change display to block to remove triangle icon */
+}
+
+/* Additional styles for the <summary> element */
+summary {
+  cursor: pointer; /* Show a pointer cursor to indicate interactivity */
+  padding: 10px;   /* Add padding for better spacing */
+  background-color: #F1F1F1; /* Light gray background color for visibility */
+  border: 1px solid #CCCCCC; 
+  border-radius: 4px; 
+}
+
+/* Optional: Customize the <details> element itself */
+details {
+  margin: 10px 0; /* Space between <details> elements */
+  padding: 10px;  /* Space inside the <details> */
+  background-color: #F9F9F9; /* Custom background color for <details> */
+  border: 1px solid #DDDDDD; /* Optional border styling */
+  border-radius: 4px;
+}
+
+/* Main content of Webpage */
 main {
   flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling in the content area */
+  overflow-y: auto;  /* Enable vertical scrolling in the content area */
   padding-top: 20px; /* Adjust space below header */
 }
 
@@ -82,7 +119,7 @@ header img {
   }
 }
 
-/* Footer */
+/* Footer section of Webpage */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +180,7 @@ hr {
   overflow: visible;
 }
 
-/* Forms */
+/* Forms such as Buttons */
 button, input, optgroup, select, textarea {
   font-family: inherit;
   font-size: 100%;
@@ -199,9 +236,9 @@ img {
 }
 
 /* Browsers like Firefox, once "html, body, header, footer, main, section, article, aside, nav"
-   are applied at the start it is inherited by all child elements unless otherwise overridden. */
+   is applied at the start it is inherited by all child elements unless otherwise overridden. */
 html {
   scrollbar-width: auto; /* Options: auto | thin | none */
-  scrollbar-color: #888 #f1f1f1; /* thumb color | track color */
+  scrollbar-color: #888 #F1F1F1; /* thumb color | track color */
 }
 /*EOF*/
