@@ -200,7 +200,7 @@ img {
 
 /* Browsers like Firefox */
 * {
-  scrollbar-width: thin; /* Options: auto | thin | none */
+  scrollbar-width: auto; /* Options: auto | thin | none */
   scrollbar-color: #888 #f1f1f1; /* thumb color | track color */
 }
 /*EOF*/
