@@ -167,7 +167,8 @@ button::-moz-focus-inner {
   opacity: 1;
 }
 
-/* Miscellaneous */
+/* Ensures that images do not have a border (useful for older browsers that might display borders around linked images).
+   Sets images to be block-level elements, that way preventing any whitespace gaps caused by inline behavior. */
 img {
   border-style: none;
   display: block;
