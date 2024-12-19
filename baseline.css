@@ -27,7 +27,8 @@ SOFTWARE.
 /* Document v2.0 for Cache Busting
 ========================================================================== */
 
-/* Apply box-sizing globally for consistent layout behavior */
+/* Apply box-sizing globally for consistent layout behavior, which ensures that
+   padding and borders are included in the width and height calculations. */
 html, body, header, footer, main, section, article, aside, nav {
   box-sizing: border-box;
 }
@@ -197,8 +198,9 @@ img {
   outline-offset: 4px;
 }
 
-/* Browsers like Firefox */
-* {
+/* Browsers like Firefox, once "html, body, header, footer, main, section, article, aside, nav"
+   are applied at the start it is inherited by all child elements unless otherwise overridden. */
+html {
   scrollbar-width: auto; /* Options: auto | thin | none */
   scrollbar-color: #888 #f1f1f1; /* thumb color | track color */
 }
