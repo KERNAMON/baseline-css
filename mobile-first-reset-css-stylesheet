@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=2, user-scalable=yes">
+    <meta name="description" content="baseline.css is a modern and ultra-sophisticated css reset stylesheet that ensures consistent styling across all browsers, mobile-first.">
+    <meta name="keywords" content="css, stylesheet, css reset, baseline.css, github, github pages">
+    <meta name="author" content="Saskia Ostermann Toutatis">
+    
+	  <title>Baseline.CSS</title>
+  
+    <link rel="canonical" href="https://kernamon.github.io/baseline-css/">
+    <link rel="icon" type="image/png" href="favicon.png">
+  
+<!-- Metadata END -->
+<!-- Stylesheets -->
+
+     <link rel="stylesheet" type="text/css" href="assets/css/baseline.min.css?v=2.0">
+     <link rel="stylesheet" type="text/css" href="style.css?v=1.7">  <!-- Cache Busting -->
+  
+<!-- Stylesheets END -->
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img 
+                src="images/baseline-css-logotype-300.webp" 
+                srcset="
+                        images/baseline-css-logotype-300.webp 300w,
+                        images/baseline-css-logotype-600.webp 600w,
+		        images/baseline-css-logotype-1100.webp 1100w
+                " 
+                sizes="(max-width: 1100px) 100vw, 300px"
+                alt="baseline.css logotype"
+                class="logo-img"
+		width="300" 
+                height="240">
+	</div>
+        <div class="header-content">
+            <h1>reset css</h1>
+            <p>Showcase of a modern CSS reset and baseline styling minified to 2,3Kb</p>
+        </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>CSS reset with baseline.css</h2>
+      <p>
+        Baseline.css is a modern and ultra-sophisticated <a href="https://github.com/KERNAMON/mobile-first-reset-css-stylesheet/">CSS reset</a> that ensures consistent styling across all modern browsers. 
+        Removes unnecessary styling and provides a clean slate for your web projects.
+      </p>
+    </section>
+
+    <section>
+      <h2>Sample Content</h2>
+      <p>Paragraph pre-styled with baseline.css to ensure a uniform appearance across all browsers.</p>
+      <p>Paragraph & link to showcase line-height and spacing consistency, as a result of <a href="https://github.com/KERNAMON/css-baseline/">baseline.css</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>BASELINE.CSS &copy; 2024</p>
+  </footer>
+</body>
+</html>
