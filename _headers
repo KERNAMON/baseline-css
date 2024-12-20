@@ -1,0 +1,21 @@
+# (??) When dealing with Cross-Origin Resource Sharing (CORS), the Access-Control-Allow-Origin header is used to specify which origins are allowed to access resources on your server.
+# (??) An origin consists of the protocol (http or https), domain and port (if specified), e.g., https://example.com
+
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Strict-Transport-Security
+# Enforces HTTPS for the domain and its subdomains, with a long validity period (1 year)
+# preload: Indicates readiness to be added to the HSTS preload list
+
+#Content-Security-Policy controls resources loaded on the website, restricts scripts, styles and images to only those served from the same domain ('self'), while allowing inline image data (data:)
+
+# X-Frame-Options prevents clickjacking by restricting the ability to embed your site in an <iframe>
+# SAMEORIGIN: Allows framing only from the same origin.
+
+# Permissions-Policy controls browser permissions for sensitive features like geolocation, microphone and camera.
+# geolocation=(): Denies access to geolocation.
+# microphone=(): Denies microphone access.
+# camera=(): Denies camera access.
