@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap-style.xsl"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+      
+  <url>
+    <loc>https://baseline-css.pages.dev/</loc>
+    <lastmod>2024-12-21T16:56:45+01:00</lastmod>
+  </url>
+  <url>
+    <loc>https://baseline-css.pages.dev/mobile-first-css-reset-stylesheet/</loc>
+    <lastmod>2024-12-21T16:58:45+01:00</lastmod>
+  </url>
+  
+  <!-- Add additional menu links here... -->
+</urlset>
