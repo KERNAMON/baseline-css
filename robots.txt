@@ -1,0 +1,13 @@
+# Reference: https://developers.cloudflare.com/fundamentals/get-started/reference/cdn-cgi-endpoint/#disallow-using-robotstxt
+
+# This ensures that Cloudflare paths /cdn-cgi/trace or /cdn-cgi/styles/ are excluded from indexing.
+# These endpoints are only used for internal Cloudflare operations and are irrelevant for search engines.
+User-agent: *
+Disallow: /cdn-cgi/
+
+# This asks crawlers to wait 10 seconds between requests, which is useful for limiting server strain.
+# This directive is honored by some search engines but not by Google.
+User-agent: *
+Crawl-delay: 10
+
+Sitemap: https://baseline-css.pages.dev/sitemap.xml
