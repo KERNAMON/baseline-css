@@ -23,4 +23,4 @@ The changes we added go beyond simple normalization by addressing:
 
 LEGAL DISCLAIMER:
 
-The MIT license of normalize.css is compatible with our AGPLv3-licensed KERNAMON CMS & WorkStation. We just need to ensure proper attribution for the MIT-licensed file and remember that the overall distribution will still need to meet AGPLv3 requirements.
+The MIT license of normalize.css is compatible with our AGPLv3-licensed KERNAMON WorkStation. We only need to ensure proper attribution for the MIT-licensed file and remember that the overall distribution will still need to meet AGPLv3 requirements.
