@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.hello-btn');
     if (button) {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', () => {
             alert('Hello from CSS!');
         });
     }
