@@ -30,6 +30,7 @@ export async function onRequest(context) {
   let name = searchParams.get('myQuery') || 'default'
 
   // Define the metadata
+  ogtag = ``
   
 
   return new HTMLRewriter().on('head', new ElementHandler(ogtag)).transform(res)
