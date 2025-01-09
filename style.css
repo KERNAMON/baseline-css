@@ -156,8 +156,9 @@ footer {
 }
 
 footer p {
-  color: #FF000D;   /* Bright Red */
+  color: #FFFF00;  
   font-size: 1rem;  /* Slightly larger text for footer */
+  font-weight: bold;
 }
 
 /* Media Query for Smaller Screens */
