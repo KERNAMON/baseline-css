@@ -1,4 +1,4 @@
-/*******  Cache Busting >> styles.css v1.6  *******/
+/*******  Cache Busting >> styles.css v1.7  *******/
 
 /*  Additional styles to enhance the demo webpage */
 
@@ -34,7 +34,7 @@ header .logo {
 }
 
 header .logo-img {
-  max-width: 100%; /* Prevents the image from overflowing and ensures better scalability across different screen sizes */
+  max-width: 100%;
   height: auto; 
 }
 
@@ -76,6 +76,12 @@ a {
 
 a:hover {
   text-decoration: underline;  /* Add underline on hover for better accessibility */
+}
+
+.container .logo-img {
+  max-width: 100%; /* Prevents the image from overflowing and ensures better scalability across different screen sizes */
+  height: auto;
+  align-items: center;
 }
 
 /* Interactive Section of Display Buttons */
@@ -160,6 +166,10 @@ footer p {
 
   /* Adjust logo image size between 300, 600, 1100px wide */
   header .logo-img {
+    width: 100%;
+    height: auto;
+  }
+  .container .logo-img {
     width: 100%;
     height: auto;
   }
