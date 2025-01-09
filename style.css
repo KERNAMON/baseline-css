@@ -172,6 +172,7 @@ footer p {
     width: 100%;
     height: auto;
   }
+  /* Adjust image size on body container between 300, 600, 1100px wide */
   .center-image {
     width: 100%;
     height: auto;
