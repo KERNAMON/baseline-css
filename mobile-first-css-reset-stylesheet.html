@@ -77,7 +77,7 @@
 	Baseline.CSS <b>Version 1.0 - Initial Release in 2024</b>
       </p>
       <p>
-	The initial version of baseline.css was introduced as a foundational stylesheet aimed at creating a uniform and consistent design across all webpages, while also improving accessibility and responsiveness.
+	The initial version of baseline.css was introduced as a foundational stylesheet aimed at creating a uniform and consistent design across all webpages, while also improving accessibility and mobile responsiveness.
 	It was created to replace the years old normalize.css of Nicolas Gallagher, with a more sophisticated approach, ensuring better performance and flexibility.
       </p>
       <p>
@@ -85,7 +85,7 @@
       </p>
       <p>
 	Historically, the main goal of a CSS reset has been to ensure consistency between browsers and to undo all default styles, creating a blank slate for your webpages,
-	but nowadays, modern browsers don't have massive discrepancies regarding layout display and spacing, so it is not really necessary to strip away all of the browser defaults.
+	but nowadays, modern browsers do not have massive discrepancies regarding layout display and spacing, so it is not really necessary to strip away all of the browser defaults.
       </p>
     </section>
 
@@ -96,8 +96,18 @@
 	baseline.css includes responsive layout techniques, making it easier to create webpages that adjust seamlessly to different screen sizes.
       </p>
       <p>
-        Modern smartphones have 2x and 3x hi-dpi displays. That means that an area of the webpage measured as 300px in CSS, as an example, will need 600 or 900 device pixels worth of image data to look nice and crisp.
+        Modern smartphones have 2x and 3x hi-dpi displays. That means that, as an example, an area of the webpage being measured as 300px in CSS will need 600 or 900 device pixels worth of image data to look nice and crisp.
 	As a web developer, many times, you have the feeling that you need to “squeeze” large images into much smaller spaces on your webpages.
+      </p>
+      <h3><strong>Typography</strong></h3>
+      <p>
+	<b>Font and Typography Standardization</b>: baseline.css introduces a standardized font setup for your webpages, helping you to maintain consistent text styling across various sections of your website or web app.
+	This approach eliminates the need for manually defining <strong>font styles</strong> for every page, saving you a lot of time and effort.
+      </p>
+      <h3><strong>CSS reset</strong>& Box Model</h3>
+      <p>
+	<b>Simplified Box Model</b>: According to the <strong>CSS box model</strong>, the web browser supplies each element as a square prism, but this delightful CSS file implements a simplified version of the box model,
+	reducing potential conflicts between default browser styles. By defining the <em>box-sizing</em> property, baseline.css ensures that padding and border widths do not impact element width calculations. Cool?
       </p>
     </section>
 
