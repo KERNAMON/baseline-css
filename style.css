@@ -1,4 +1,4 @@
-/*******  Cache Busting >> styles.css v1.7  *******/
+/*******  Cache Busting >> styles.css v1.8  *******/
 
 /*  Additional styles to enhance the demo webpage */
 
@@ -78,11 +78,14 @@ a:hover {
   text-decoration: underline;  /* Add underline on hover for better accessibility */
 }
 
-.container .logo-img {
-  max-width: 100%; /* Prevents the image from overflowing and ensures better scalability across different screen sizes */
-  height: auto;
-  align-items: center;
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  height: auto;          
+  margin: 0 auto;         /* Centers the container in the parent block */
 }
+
 
 /* Interactive Section of Display Buttons */
 
@@ -169,7 +172,7 @@ footer p {
     width: 100%;
     height: auto;
   }
-  .container .logo-img {
+  .center-image {
     width: 100%;
     height: auto;
   }
