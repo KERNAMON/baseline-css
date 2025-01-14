@@ -86,6 +86,13 @@ a:hover {
   margin: 0 auto;         /* Centers the container in the parent block */
 }
 
+/* Separate the concerns for centering and responsiveness of images */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space under the image */
+}
+
 
 /* Interactive Section of Display Buttons */
 
