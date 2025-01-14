@@ -93,6 +93,13 @@ a:hover {
     display: block; /* Remove extra space under the image */
 }
 
+.center-decorative {
+  text-align: center;
+  font-size: 2rem;  
+  color: #333; 
+  margin: 1rem 0;    /* Add vertical spacing */
+}
+
 
 /* Interactive Section of Display Buttons */
 
